@@ -22,7 +22,6 @@
 </template>
 
 <script lang="ts" setup>
-// import { ElMessageBox, ElMessage } from 'element-plus';
 import { useGlobalStore } from "@/store/modules/globalStore";
 import { ElMessageBox, ElMessage } from "element-plus";
 import { ref } from "vue";

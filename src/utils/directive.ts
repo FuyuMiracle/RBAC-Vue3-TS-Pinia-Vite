@@ -6,7 +6,8 @@ const directives: any = {
 			//当指令第一次绑定到元素并且在挂载父组件之前调用。
 			//根据当前路由的meta中的btn按钮权限数组来判断是否有权限
 			let btnsPermission = [];
-			const btns: any = router.currentRoute?.value?.meta?.btns;
+			const btns: any = router.currentRoute?.value?.meta?.btns || [];
+
 			btnsPermission = btns.map((item: any) => item.permission) || [];
 
 			if (!btnsPermission.includes(binding.value)) {
