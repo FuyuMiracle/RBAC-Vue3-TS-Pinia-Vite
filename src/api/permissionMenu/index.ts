@@ -1,0 +1,157 @@
+import httpRequest from "@/api/request";
+
+export const getMenuList = () => {
+	return httpRequest({
+		url: "/menuList",
+		method: "get",
+		params: {},
+	});
+
+	//模拟后端返回的数据
+	// return new Promise((resolve) => {
+	// 	const data = [
+	// 	  {
+	// 	  		name:"系统管理",
+	// 	  		path:"/systemManage",
+	// 	  		component:"/layout/index.vue",
+	// 	  		icon:"ri-ubuntu-line",
+	// 	  		permission:"10",
+	// 	  		children:[
+	// 	  			{
+	// 	  				name:"角色管理",
+	// 	  				path:"/systemManage/roleManage",
+	// 	  				component:"/views/systemManage/roleManage/index.vue",
+	// 	  				icon:"ri-file-user-line",
+	// 	  				permission:"1010",
+	// 	  				children:[
+	// 	  					{
+	// 	  						name:"添加角色",
+	// 	  						permission:"101001"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"修改角色",
+	// 	  						permission:"101002"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"删除角色",
+	// 	  						permission:"101003"
+	// 	  					},
+	// 	  				]
+	// 	  			},
+	// 	  			{
+	// 	  				name:"菜单管理",
+	// 	  				path:"/systemManage/menuManage",
+	// 	  				component:"/views/systemManage/menuManage/index.vue",
+	// 	  				icon:"ri-menu-2-line",
+	// 	  				permission:"1020",
+	// 	  				children:[
+	// 	  					{
+	// 	  						name:"添加菜单",
+	// 	  						permission:"102001"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"修改菜单",
+	// 	  						permission:"102002"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"删除菜单",
+	// 	  						permission:"102003"
+	// 	  					},
+	// 	  				]
+	// 	  			},
+	// 	  			{
+	// 	  				name:"用户管理",
+	// 	  				path:"/systemManage/userManage",
+	// 	  				component:"/views/systemManage/userManage/index.vue",
+	// 	  				icon:"ri-user-line",
+	// 	  				permission:"1030",
+	// 	  				children:[
+	// 	  					{
+	// 	  						name:"添加用户",
+	// 	  						permission:"103001"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"修改用户",
+	// 	  						permission:"103002"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"删除用户",
+	// 	  						permission:"103003"
+	// 	  					},
+	// 	  				]
+	// 	  			}
+	// 	  		]
+
+	// 	  },
+	// 	  {
+	// 	  		name:"文章管理",
+	// 	  		path:"/articleManage",
+	// 	  		component:"/layout/index.vue",
+	// 	  		icon:"ri-file-text-fill",
+	// 	  		permission:"20",
+	// 	  		children:[
+	// 	  			{
+	// 	  				name:"文章列表",
+	// 	  				path:"/articleManage/articleList",
+	// 	  				component:"/views/articleManage/articleList/index.vue",
+	// 	  				icon:"ri-file-text-line",
+	// 	  				permission:"2010",
+	// 	  				children:[
+	// 	  					{
+	// 	  						name:"添加文章",
+	// 	  						permission:"201001"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"修改文章",
+	// 	  						permission:"201002"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"删除文章",
+	// 	  						permission:"201003"
+	// 	  					},
+	// 	  				]
+	// 	  			},
+	// 	  			{
+	// 	  				name:"文章类型",
+	// 	  				path:"/articleManage/articleType",
+	// 	  				component:"/views/articleManage/articleType/index.vue",
+	// 	  				icon:"ri-clipboard-line",
+	// 	  				permission:"2020",
+	// 	  				children:[
+	// 	  					{
+	// 	  						name:"添加文章类型",
+	// 	  						permission:"202001"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"修改文章类型",
+	// 	  						permission:"202002"
+	// 	  					},
+	// 	  					{
+	// 	  						name:"删除文章类型",
+	// 	  						permission:"202003"
+	// 	  					},
+	// 	  				]
+
+	// 	  			},
+	// 	  		]
+	// 	  },
+	// 	  {
+	// 	 	id:"2-2",
+	// 	 	name:"测试",
+	// 	 	path:"/test",
+	// 	 	component:"/views/test/index.vue",
+	// 	 	icon:"ri-clipboard-line",
+	// 	    hidden:false,
+	// 	 		children:[]
+	// 	  },
+	// 	]
+
+	// 	setTimeout(() => {
+	// 		const res = {
+	// 			code:200,
+	// 			data:data
+	// 		}
+	// 		resolve(res)
+	// 	},200)
+	// })
+};

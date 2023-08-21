@@ -1,0 +1,36 @@
+/* 
+    重写element-UI的所有基础色
+    颜色值必须和原有的不一样，才会加载这里的定义的基础色
+ */
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    $colors: (
+        'primary': (
+            'base': #167c80,//#776ea7,//#167c80,//#384D9D,
+        ),
+        'white': #ffffff,
+        'black': #000000,
+        'success': (
+            'base': #67c67c,
+        ),
+        'warning': (
+            'base': #e6ae6a,
+        ),
+        'danger': (
+            'base': #f56f56,
+        ),
+        'error': (
+            'base': #f56f56,
+        ),
+        // 'info': (
+        //     'base': #909909,
+        // ),
+    ),
+    $text-color: (
+        'primary': #555555,
+        'disabled': #c0cccc,
+        'disabled-base': #bbbccc
+    ),
+    $bg-color: ("":"#ffffff !default"),
+    $color-info: #ddd !default,
+);
